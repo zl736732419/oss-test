@@ -131,4 +131,21 @@ public class OSSCenterTest {
         }
         System.out.println("文件下载成功");
     }
+
+    /**
+     * 删除bucket/object
+     * 
+     */
+    @Test
+    public void testDeleteObjects() {
+        List<Map<String, Object>> list = center.listObjects(null, null, null);
+        list.stream().forEach(obj->{
+            System.out.println(obj);
+            obj.keySet().stream().forEach(key->{
+                center.deleteObject(key);
+            });
+        });
+        center.deleteBucket();
+    }
+    
 }
