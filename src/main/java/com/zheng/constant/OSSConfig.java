@@ -8,21 +8,21 @@ public class OSSConfig {
     /**
      * access key id
      */
-    public static final String ACCESS_KEY_ID = "LTAIXfPCDQ15pqer";
+    public static final String ACCESS_KEY_ID = "<Your Access Key Id>";
     
     /**
      * access key secret
      */
-    public static final String ACCESS_KEY_SECRET = "ls9OIRefCB3RLTs67Wyp4kWUeKqlSt";
+    public static final String ACCESS_KEY_SECRET = "<Your Access Key Secrect>";
 
     /**
      * endpoint
      */
-    public static final String ENDPOINT = "http://oss-cn-shanghai.aliyuncs.com";
+    public static final String ENDPOINT = "<Your Bucket Endpoint>";
 
     /**
      * bucket name
      */
-    public static final String BUCKET_NAME = "zl-bucket-test";
+    public static final String BUCKET_NAME = "<Your Bucket Name>";
     
 }
